@@ -8,7 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     container: 
-      image: harindu91/playwright-docker
+      image: harindu91/playwright-docker:1.0.1
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
