@@ -8,7 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: git checkout Cypress Tests
+      - name: git checkout repo
         uses: actions/checkout@v3
 
       - name: Pull Docker image
