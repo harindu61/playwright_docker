@@ -11,6 +11,12 @@ jobs:
       - name: git checkout repo
         uses: actions/checkout@v3
 
+      - name: Run Node app
+        run: |
+          cd node-app/
+          npm install
+          node server.js
+
       - name: Pull Docker image
         run: docker pull harindu91/playwright-docker:1.0.6
 
