@@ -15,4 +15,4 @@ jobs:
         run: docker pull harindu91/playwright-docker:1.0.6
 
       - name: Run Docker container
-        run: docker run --rm -v "${GITHUB_WORKSPACE}/playwright/tests:/app/tests" -v "${GITHUB_WORKSPACE}/playwright/tests/playwright.config.js:/app/playwright.config.js" harindu91/playwright-docker:1.0.6
+        run: docker run --rm -v "${GITHUB_WORKSPACE}/playwright/tests:/app/tests" -v "${GITHUB_WORKSPACE}/playwright/playwright.config.js:/app/playwright.config.js" harindu91/playwright-docker:1.0.6
