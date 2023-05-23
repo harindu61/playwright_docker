@@ -11,5 +11,8 @@ jobs:
       - name: Pull Docker image
         run: docker pull harindu91/playwright-docker:1.0.6
 
+      - name: ls
+        run: ls
+
       - name: Run Docker container
         run: docker run --rm -v "${GITHUB_WORKSPACE}/playwright:/app" harindu91/playwright-docker:1.0.6
