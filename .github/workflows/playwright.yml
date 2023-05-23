@@ -15,7 +15,7 @@ jobs:
         run: |
           cd node-app/
           npm install
-          node server.js
+          node server.js &
 
       - name: Pull Docker image
         run: docker pull harindu91/playwright-docker:1.0.6
