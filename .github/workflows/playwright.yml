@@ -11,11 +11,17 @@ jobs:
       - name: git checkout repo
         uses: actions/checkout@v3
 
+      - name: cd playwright 1
+        run: print "${GITHUB_WORKSPACE}"
+
+      - name: cd playwright 1
+        run: print "${GITHUB_WORKSPACE}/playwright"
+
+      - name: cd playwright 1
+        run: ls
+
       - name: Pull Docker image
         run: docker pull harindu91/playwright-docker:1.0.6
-
-      - name: cd playwright
-        run: cd playwright
 
       - name: Run Docker container
         run: docker run --rm -v "${GITHUB_WORKSPACE}/playwright:/app" harindu91/playwright-docker:1.0.6
