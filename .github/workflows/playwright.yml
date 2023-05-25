@@ -32,6 +32,7 @@ jobs:
   
   publish_report:
     name: Publish HTML Report
+    if: ${{ always() }}
     needs: [test]
     runs-on: ubuntu-latest
     continue-on-error: true
