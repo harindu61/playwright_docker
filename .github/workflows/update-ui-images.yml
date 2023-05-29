@@ -49,8 +49,9 @@ jobs:
       - name: Raise pull request
         uses: octokit/request-action@v2.x
         with:
+          token: ${{ secrets.TOKEN }}
           method: POST
-          headers: '{"Authorization": "Bearer ${{ secrets.GH_TOKEN }}"}'
+          headers: '{"Accept": "application/vnd.github.v3+json"}'
           url: https://api.github.com/repos/${{ github.repository }}/pulls
           body: |
             {
