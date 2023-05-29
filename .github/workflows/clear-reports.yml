@@ -32,7 +32,7 @@ jobs:
           subfolders=$(git ls-files | xargs -n 1 dirname | uniq)
           for folder in $subfolders; do
             echo -n "."
-            LAST_MODIFIED_TIMESTAMP=$(git log -1 --format="%at" -- "$file")
+            LAST_MODIFIED_TIMESTAMP=$(git log -1 --format="%at" -- "$folder")
             # If the file hasn't been modified within the last $1 days
             if [ "$LAST_MODIFIED_TIMESTAMP" -lt "$X_DAYS_AGO_TIMESTAMP" ]; then
               # Remove the file from the repository
