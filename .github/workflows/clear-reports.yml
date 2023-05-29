@@ -24,6 +24,10 @@ jobs:
         timeout-minutes: 3
         run: |
           X_DAYS_AGO_TIMESTAMP=$(date -d "$1 days ago" +%s)
+
+      - name: Delete reports older than 10 days 2
+        timeout-minutes: 3
+        run: |
           cd reports/
           subfolders=$(git ls-files | xargs -n 1 dirname | uniq)
           for folder in $subfolders; do
@@ -36,7 +40,6 @@ jobs:
               git rm --quiet "$file"
             fi
           done
-
 
 
 
