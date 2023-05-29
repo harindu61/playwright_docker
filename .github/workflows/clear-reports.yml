@@ -27,9 +27,9 @@ jobs:
         run: |
           X_DAYS_AGO_TIMESTAMP=$(date -d "$1 days ago" +%s)
           cd reports/
-          subfolders=$(git ls-files | xargs -n 1 dirname | uniq)
+          files=$(git ls-files)
           echo "Hello 1 $X_DAYS_AGO_TIMESTAMP"
-          for folder in $subfolders; do
+          for folder in $files; do
             echo -n "Hello 2 "
             LAST_MODIFIED_TIMESTAMP=$(git log -1 --format="%at" -- "$folder")
             echo "Hello 3 $LAST_MODIFIED_TIMESTAMP"
