@@ -18,18 +18,14 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      
-      - name: Delete reports older than 10 days 
-        timeout-minutes: 3
-        run: |
-          X_DAYS_AGO_TIMESTAMP=$(date -d "$1 days ago" +%s)
 
       - name: LS
         run: ls -R -l
 
-      - name: Delete reports older than 10 days 2
+      - name: Delete reports older than 10 days
         timeout-minutes: 3
         run: |
+          X_DAYS_AGO_TIMESTAMP=$(date -d "$1 days ago" +%s)
           cd reports/
           subfolders=$(git ls-files | xargs -n 1 dirname | uniq)
           echo "Hello 1 $X_DAYS_AGO_TIMESTAMP"
