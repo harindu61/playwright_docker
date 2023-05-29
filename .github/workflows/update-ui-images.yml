@@ -1,0 +1,36 @@
+name: 'Generate Playwright Snapshot'
+
+on: workflow_dispatch
+
+jobs:
+  pr_pipeline:
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Node app
+        run: |
+          cd node-app/
+          npm install
+          node server.js &
+
+      - name: Pull Docker image
+        run: docker pull harindu91/playwright-docker:1.0.6
+
+      - name: Run Tests on Docker container
+        run: docker run --rm -v "${GITHUB_WORKSPACE}/playwright/tests:/app/tests" -v "${GITHUB_WORKSPACE}/playwright/playwright-report:/app/playwright-report" -v "${GITHUB_WORKSPACE}/playwright/playwright.config.js:/app/playwright.config.js" harindu91/playwright-docker:1.0.6 npx playwright test --update-snapshots
+  
+      - name: Export the image snapshot
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: snapshot
+          path: playwright/tests/visual-tests
+          retention-days: 1
+
+      - name: Prune docker images
+        if: always()
+        run: docker images && docker system prune -a --volumes -f
+
