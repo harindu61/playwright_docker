@@ -32,7 +32,7 @@ jobs:
           for folder in $files; do
             echo -n "Hello 2 "
             LAST_MODIFIED_TIMESTAMP=$(git log -1 --format="%at" -- "$folder")
-            echo "Hello 3 $LAST_MODIFIED_TIMESTAMP"
+            echo "Hello 3 $folder - $LAST_MODIFIED_TIMESTAMP"
             # If the file hasn't been modified within the last $1 days
             if [ "$LAST_MODIFIED_TIMESTAMP" -lt "$X_DAYS_AGO_TIMESTAMP" ]; then
               # Remove the file from the repository
