@@ -1,9 +1,11 @@
 name: Playwright Tests
+
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -36,8 +38,10 @@ jobs:
     needs: [test]
     runs-on: ubuntu-latest
     continue-on-error: true
+
     env:
       HTML_REPORT_URL_PATH: reports/${{ github.ref_name }}/${{ github.run_id }}/${{ github.run_attempt }}
+      
     steps:
       - name: Checkout GitHub Pages Branch
         uses: actions/checkout@v2
@@ -74,7 +78,7 @@ jobs:
               exit 0
             fi
           done
-          
+
       - name: Output Report URL as Worfklow Annotation
         run: |
           FULL_HTML_REPORT_URL=https://harindu61.github.io/playwright_docker/$HTML_REPORT_URL_PATH
