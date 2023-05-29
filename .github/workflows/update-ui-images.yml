@@ -49,9 +49,7 @@ jobs:
       - name: Raise pull request
         uses: octokit/request-action@v2.x
         with:
-          token: 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
           method: POST
-          headers: '{"Accept": "application/vnd.github.v3+json"}'
           url: https://api.github.com/repos/${{ github.repository }}/pulls
           body: |
             {
@@ -61,6 +59,8 @@ jobs:
               "base": ${{ github.ref_name }},
               "reviewers": ["${{ github.actor }}"]
             }
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
       - name: Prune docker images
         if: always()
