@@ -28,26 +28,21 @@ jobs:
       - name: Delete reports older than 10 days
         timeout-minutes: 3
         run: |
-          X_DAYS_AGO_TIMESTAMP=$(date -d "$1 days ago" +%s)
+          X_DAYS_AGO_TIMESTAMP=$(date -d "$1 hour ago" +%s)
           cd reports/
           files=$(git ls-files | xargs -n 1 dirname | uniq)
-          echo "Hello 1 $X_DAYS_AGO_TIMESTAMP"
+          
           for folder in $files; do
-            echo -n "Hello 2 "
+            echo -n "."
             LAST_MODIFIED_TIMESTAMP=$(git log -1 --format="%at" -- "$folder")
-            echo "Hello 3 $folder - $LAST_MODIFIED_TIMESTAMP"
-            # If the file hasn't been modified within the last $1 days
+            
             if [ "$LAST_MODIFIED_TIMESTAMP" -lt "$X_DAYS_AGO_TIMESTAMP" ]; then
-              # Remove the file from the repository
               echo -e "\nRemoving $file last modified at $(date -d "@$LAST_MODIFIED_TIMESTAMP")"
-              echo -n "Hello 4 "
               git rm -r --quiet "$folder"
-              echo -n "Hello 5 "
             fi
           done
 
           if ! git diff --exit-code --quiet --staged; then
-            echo -n "Hello 6 "
             git commit -m "Remove files not modified within the last $1 days"
             git push
           else
@@ -56,12 +51,3 @@ jobs:
       
       - name: LS
         run: ls -R -l
-
-
-
-#subfolders=$(git ls-files | xargs -n 1 dirname | uniq)
-#for folder in $subfolders; do
-#  echo -n "."
-#  LAST_MODIFIED_TIMESTAMP=$(git log -1 --format="%at" -- "$folder")
-#  echo -e "\nRemoving $file last modified at $(date -d "@$LAST_MODIFIED_TIMESTAMP")"
-#done  
