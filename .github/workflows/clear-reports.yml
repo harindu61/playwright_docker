@@ -39,7 +39,7 @@ jobs:
               # Remove the file from the repository
               echo -e "\nRemoving $file last modified at $(date -d "@$LAST_MODIFIED_TIMESTAMP")"
               echo -n "Hello 4 "
-              git rm --quiet "$file"
+              git rm --quiet "$folder"
               echo -n "Hello 5 "
             fi
           done
