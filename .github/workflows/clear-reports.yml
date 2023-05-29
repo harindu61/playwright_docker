@@ -32,9 +32,11 @@ jobs:
         run: |
           cd reports/
           subfolders=$(git ls-files | xargs -n 1 dirname | uniq)
+          echo $X_DAYS_AGO_TIMESTAMP
           for folder in $subfolders; do
             echo -n "."
             LAST_MODIFIED_TIMESTAMP=$(git log -1 --format="%at" -- "$folder")
+            echo $LAST_MODIFIED_TIMESTAMP
             # If the file hasn't been modified within the last $1 days
             if [ "$LAST_MODIFIED_TIMESTAMP" -lt "$X_DAYS_AGO_TIMESTAMP" ]; then
               # Remove the file from the repository
@@ -45,6 +47,7 @@ jobs:
 
           if ! git diff --exit-code --quiet --staged; then
             git commit -m "Remove files not modified within the last $1 days"
+            git push
           else
             echo "No files removed"
           fi
