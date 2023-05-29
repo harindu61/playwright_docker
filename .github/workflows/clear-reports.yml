@@ -7,8 +7,7 @@ jobs:
   clean_report:
     runs-on: ubuntu-latest
     continue-on-error: true
-    env:
-      HTML_REPORT_URL_PATH: reports
+
     steps:
       - name: git checkout gh-pages
         uses: actions/checkout@v3
@@ -43,6 +42,12 @@ jobs:
               git rm --quiet "$file"
             fi
           done
+
+          if ! git diff --exit-code --quiet --staged; then
+            git commit -m "Remove files not modified within the last $1 days"
+          else
+            echo "No files removed"
+          fi
       
       - name: LS
         run: ls -R -l
