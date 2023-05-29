@@ -1,0 +1,49 @@
+name: Scheduled Playwright report cleanup 
+on:
+  workflow_dispatch:
+  push:
+    branches: [ gh-pages ]
+jobs:
+  clean_report:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    env:
+      HTML_REPORT_URL_PATH: reports
+    steps:
+      - name: git checkout gh-pages
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+      
+      - name: Set Git User
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      
+      - name: Delete reports older than 10 days 
+        timeout-minutes: 3
+        run: |
+          X_DAYS_AGO_TIMESTAMP=$(date -d "$1 days ago" +%s)
+          cd reports/
+          subfolders=$(git ls-files | xargs -n 1 dirname | uniq)
+          for folder in $subfolders; do
+            echo -n "."
+            LAST_MODIFIED_TIMESTAMP=$(git log -1 --format="%at" -- "$file")
+            # If the file hasn't been modified within the last $1 days
+            if [ "$LAST_MODIFIED_TIMESTAMP" -lt "$X_DAYS_AGO_TIMESTAMP" ]; then
+              # Remove the file from the repository
+              echo -e "\nRemoving $file last modified at $(date -d "@$LAST_MODIFIED_TIMESTAMP")"
+              git rm --quiet "$file"
+            fi
+          done
+
+
+
+
+
+#subfolders=$(git ls-files | xargs -n 1 dirname | uniq)
+#for folder in $subfolders; do
+#  echo -n "."
+#  LAST_MODIFIED_TIMESTAMP=$(git log -1 --format="%at" -- "$folder")
+#  echo -e "\nRemoving $file last modified at $(date -d "@$LAST_MODIFIED_TIMESTAMP")"
+#done  
