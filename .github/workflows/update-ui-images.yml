@@ -5,6 +5,8 @@ on: workflow_dispatch
 jobs:
   pr_pipeline:
     runs-on: [ubuntu-latest]
+    env:
+      BRANCH_NAME: "${{ github.ref_name }}-update-visual-images"
 
     steps:
       - name: Checkout code
@@ -29,6 +31,20 @@ jobs:
           name: snapshot
           path: playwright/tests/visual-tests
           retention-days: 1
+      
+      - name: Set Git User
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Create a new branch and commit changes
+        run: |
+          git checkout -b ${{ env.BRANCH_NAME }}
+          git add playwright/tests/visual-tests
+          git commit -m "Update image snapshots for ${{ github.ref_name }}"
+          
+      - name: Push new branch
+        run: git push origin ${{ env.BRANCH_NAME }}
 
       - name: Prune docker images
         if: always()
