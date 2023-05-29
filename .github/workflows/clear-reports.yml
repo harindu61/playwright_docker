@@ -25,6 +25,9 @@ jobs:
         run: |
           X_DAYS_AGO_TIMESTAMP=$(date -d "$1 days ago" +%s)
 
+      - name: LS
+        run: ls -R -l
+
       - name: Delete reports older than 10 days 2
         timeout-minutes: 3
         run: |
@@ -40,7 +43,9 @@ jobs:
               git rm --quiet "$file"
             fi
           done
-
+      
+      - name: LS
+        run: ls -R -l
 
 
 
