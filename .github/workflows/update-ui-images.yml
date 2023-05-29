@@ -60,7 +60,7 @@ jobs:
               "reviewers": ["${{ github.actor }}"]
             }
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: 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
 
       - name: Prune docker images
         if: always()
