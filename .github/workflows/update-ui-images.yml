@@ -49,7 +49,7 @@ jobs:
       - name: Raise pull request
         run: gh pr create -B ${{ github.ref_name }} -H ${{ env.BRANCH_NAME }} --reviewer ${{ github.actor }} --title "Update image snapshots for ${{ github.ref_name }}" --body "Update image snapshots for ${{ github.ref_name }}"
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
 
       - name: Prune docker images
         if: always()
