@@ -19,10 +19,10 @@ jobs:
           node server.js &
 
       - name: Pull Docker image
-        run: docker pull harindu91/playwright-docker:1.0.6
+        run: docker pull harindu91/playwright-docker:1.1.2
 
       - name: Run Tests on Docker container
-        run: docker run --rm -v "${GITHUB_WORKSPACE}/playwright/tests:/app/tests" -v "${GITHUB_WORKSPACE}/playwright/playwright-report:/app/playwright-report" -v "${GITHUB_WORKSPACE}/playwright/playwright.config.js:/app/playwright.config.js" harindu91/playwright-docker:1.0.6 npx playwright test --update-snapshots
+        run: docker run --rm -v "${GITHUB_WORKSPACE}/playwright/tests:/app/tests" -v "${GITHUB_WORKSPACE}/playwright/playwright-report:/app/playwright-report" -v "${GITHUB_WORKSPACE}/playwright/playwright.config.js:/app/playwright.config.js" harindu91/playwright-docker:1.1.2 npx playwright test --update-snapshots
       
       - name: Set Git User
         run: |
