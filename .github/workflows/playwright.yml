@@ -20,10 +20,10 @@ jobs:
           node server.js &
 
       - name: Pull Docker image
-        run: docker pull harindu91/playwright-docker:1.0.6
+        run: docker pull harindu91/playwright-docker:1.1.2
 
       - name: Run Tests on Docker container
-        run: docker run --rm -v "${GITHUB_WORKSPACE}/playwright/tests:/app/tests" -v "${GITHUB_WORKSPACE}/playwright/playwright-report:/app/playwright-report" -v "${GITHUB_WORKSPACE}/playwright/playwright.config.js:/app/playwright.config.js" harindu91/playwright-docker:1.0.6
+        run: docker run --rm -v "${GITHUB_WORKSPACE}/playwright/tests:/app/tests" -v "${GITHUB_WORKSPACE}/playwright/playwright-report:/app/playwright-report" -v "${GITHUB_WORKSPACE}/playwright/playwright.config.js:/app/playwright.config.js" -v "${GITHUB_WORKSPACE}/playwright/allure-results:/app/allure-results -v "${GITHUB_WORKSPACE}/playwright/allure-report:/app/allure-report" harindu91/playwright-docker:1.1.2
 
       - uses: actions/upload-artifact@v2
         if: always()
