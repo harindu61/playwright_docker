@@ -24,7 +24,7 @@ jobs:
       - name: Delete reports older than 10 days
         timeout-minutes: 3
         run: |
-          X_DAYS_AGO_TIMESTAMP=$(date -d "1 days ago" +%s)
+          X_DAYS_AGO_TIMESTAMP=$(date -d "1 hours ago" +%s)
           cd reports/
           files=$(git ls-files | xargs -n 1 dirname | uniq)
           
