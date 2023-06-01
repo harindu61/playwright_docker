@@ -59,6 +59,7 @@ jobs:
           retention-days: 30
       
       - name: Output Report URL as Worfklow Annotation
+        if: always()
         run: |
           FULL_HTML_REPORT_URL=https://harindu61.github.io/playwright_docker/${{ github.run_id }}
   
