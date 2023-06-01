@@ -55,7 +55,7 @@ jobs:
         if: always()
         with:
           name: allure-report
-          path: playwright/allure-report/
+          path: /allure-report
           retention-days: 30
     
       - name: Deploy report to Github Pages
