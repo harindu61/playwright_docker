@@ -54,8 +54,8 @@ jobs:
       - uses: actions/upload-artifact@v2
         if: always()
         with:
-          name: allure-results
-          path: playwright/allure-results/
+          name: allure-report
+          path: playwright/allure-report/
           retention-days: 30
     
       - name: Deploy report to Github Pages
