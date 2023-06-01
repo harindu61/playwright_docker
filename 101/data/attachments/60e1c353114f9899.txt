@@ -1,0 +1,5 @@
+
+PAGE: https://www.google.com/
+ERROR: Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+Location: 
+------------------------------
