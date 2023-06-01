@@ -1,0 +1,996 @@
+
+PAGE: about:blank
+ERROR: [JavaScript Warning: "Content Security Policy: Ignoring “'report-sample'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+Location: https://www.google.com/
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 17,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@12bcbc7e1f24b67061f3c9de2fb2fea7',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: `[JavaScript Warning: "Content Security Policy: Ignoring “'report-sample'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]`
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: `[JavaScript Warning: "Content Security Policy: Ignoring “'report-sample'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]`,
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: about:blank
+ERROR: [JavaScript Warning: "Content Security Policy: Ignoring “'unsafe-inline'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+Location: https://www.google.com/
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 17,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@655ee7e3f72b8581bdc4656a61519cb7',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: `[JavaScript Warning: "Content Security Policy: Ignoring “'unsafe-inline'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]`
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: `[JavaScript Warning: "Content Security Policy: Ignoring “'unsafe-inline'” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]`,
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: about:blank
+ERROR: [JavaScript Warning: "Content Security Policy: Ignoring “https:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+Location: https://www.google.com/
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 17,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@6f7974a37dd29a7a4992add021f0d3f9',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: '[JavaScript Warning: "Content Security Policy: Ignoring “https:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]'
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: '[JavaScript Warning: "Content Security Policy: Ignoring “https:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]',
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: about:blank
+ERROR: [JavaScript Warning: "Content Security Policy: Ignoring “http:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]
+Location: https://www.google.com/
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 17,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@d5ad1f264bc7cba44ac812fe840a73cf',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: '[JavaScript Warning: "Content Security Policy: Ignoring “http:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]'
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: '[JavaScript Warning: "Content Security Policy: Ignoring “http:” within script-src: ‘strict-dynamic’ specified" {file: "https://www.google.com/" line: 0}]',
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: about:blank
+ERROR: [JavaScript Warning: "Content Security Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified" {file: "https://www.google.com/" line: 0}]
+Location: https://www.google.com/
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 17,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@e6db74fc239319f2ac57a15e04ee8b7c',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: `[JavaScript Warning: "Content Security Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified" {file: "https://www.google.com/" line: 0}]`
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: `[JavaScript Warning: "Content Security Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified" {file: "https://www.google.com/" line: 0}]`,
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: https://www.google.com/
+ERROR: [JavaScript Warning: "Empty string passed to getElementById()." {file: "https://www.google.com/xjs/_/js/k=xjs.s.en_US.gZd9nTl0KWM.O/am=CAAAIAAg-oRTABtAAAIABAAAEKQAAAAAAABEAAYAgkcZAQAAAAkBgyAOGABIKAEAAAAAEPoBAAAAAAAxAAAAQCgCYIAhUAUQAAAAAPkDAMALABhMWAAAAAAAAAAAIGAlCAY3SCAgAAQAAAAAAAAAAFUyeXEACA/d=1/ed=1/dg=2/rs=ACT90oGb9Oo36z2OSj8d_aTtVUAhIsqINQ/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;uY49fb:COQbmf;Pjpl" line: 144}]
+Location: https://www.google.com/xjs/_/js/k=xjs.s.en_US.gZd9nTl0KWM.O/am=CAAAIAAg-oRTABtAAAIABAAAEKQAAAAAAABEAAYAgkcZAQAAAAkBgyAOGABIKAEAAAAAEPoBAAAAAAAxAAAAQCgCYIAhUAUQAAAAAPkDAMALABhMWAAAAAAAAAAAIGAlCAY3SCAgAAQAAAAAAAAAAFUyeXEACA/d=1/ed=1/dg=2/rs=ACT90oGb9Oo36z2OSj8d_aTtVUAhIsqINQ/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;uY49fb:COQbmf;Pjplud:PoEs9b,EEDORb;QGR0gd:Mlhmy;a56pNe:JEfCwb;Me32dd:MEeYgc;kMFpHd:OTA3Ae;wR5FRb:TtcOte,O1Gjze;dIoSBb:ZgGg9b;EmZ2Bf:zr1jrb;NSEoX:lazG7b;eBAeSb:Ck63tb;EVNhjf:pw70Gc;sTsDMc:kHVSUb;wQlYve:aLUfP;io8t5d:sgY6Zb;sP4Vbe:VwDzFe;zOsCQe:Ko78Df;KcokUb:KiuZBf;WCEKNd:I46Hvd;vfVwPd:OXTqFb;kbAm9d:MkHyGd;g8nkx:U4MzKc;KpRAue:Tia57b;JXS8fb:Qj0suc;w9w86d:dt4g2b;oSUNyd:fTfGO,fTfGO,vjQg0b;SMDL4c:fTfGO,vjQg0b;l8Azde:j4Ca9b;lzgfYb:PI40bd;aZ61od:arTwJ;SJsSc:H1GVub;NPKaK:PVlQOd,SdcwHb;LBgRLc:XVMNvd,SdcwHb;rQSrae:C6D5Fc;kCQyJ:ueyPK;KQzWid:mB4wNe;EABSZ:MXZt9d;qavrXe:zQzcXe,mYbt1d;pNsl2d:j9Yuyc;TxfV6d:YORN0b;UDrY1c:eps46d;F9mqte:UoRcbe;GleZL:J1A7Od;Nyt6ic:jn2sGd;w3bZCb:ZPGaIb;VGRfx:VFqbr;G0KhTb:LIaoZ;aAJE9c:WHW6Ef;V2HTTe:RolTY;Wfmdue:g3MJlb;imqimf:jKGL2e;BgS6mb:fidj5d;UVmjEd:EesRsb;z97YGf:oug9te;AfeaP:TkrAjf;CxXAWb:YyRLvc;VN6jIc:ddQyuf;SLtqO:Kh1xYe;tosKvd:ZCqP3;uuQkY:u2V3ud;WDGyFe:jcVOxd;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;bcPXSc:gSZLJb;cFTWae:gT8qnd;gaub4:TN6bMe;xBbsrc:NEW1Qc;DpcR3d:zL72xf;hjRo6e:F62sG;BjwMce:cXX2Wb;yGxLoc:FmAr0c;pXdRYb:JKoKVe,MdUzUe;R9Ulx:CR7Ufe;oUlnpc:RagDlc;R2kc8b:ALJqWb;YV5bee:IvPZ6d;UyG7Kb:wQd0G;LsNahb:ucGLNb;xbe2wc:uRMPBc;okUaUd:wItadb;wV5Pjc:L8KGxe;ESrPQc:mNTJvc;IoGlCf:b5lhvb;G6wU6e:hezEbd;pj82le:mg5CW;dLlj2:Qqt3Gf;kY7VAf:d91TEb;TijjCd:SSmhPd;Fmv9Nc:O1Tzwc,wdLAme,HYsvw,SJMv1c;hK67qb:QWEO5b,bvBCk;BMxAGc:E5bFse,UV6hub;R4IIIb:QWfeKf,qBeYgc;whEZac:F4AmNb;tH4IIe:Ymry6;zxnPse:GkRiKb;xqZiqf:wmnU7d;lkq0A:Z0MWEf;daB6be:lMxGPd;LEikZe:byfTOb,lsjVmc/m=cdos,cr,hsm,jsa,mb4ZUb,d,csi,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 17,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@1698a6c80569f28dff9e4f2bc4442638',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: '[JavaScript Warning: "Empty string passed to getElementById()." {file: "https://www.google.com/xjs/_/js/k=xjs.s.en_US.gZd9nTl0KWM.O/am=CAAAIAAg-oRTABtAAAIABAAAEKQAAAAAAABEAAYAgkcZAQAAAAkBgyAOGABIKAEAAAAAEPoBAAAAAAAxAAAAQCgCYIAhUAUQAAAAAPkDAMALABhMWAAAAAAAAAAAIGAlCAY3SCAgAAQAAAAAAAAAAFUyeXEACA/d=1/ed=1/dg=2/rs=ACT90oGb9Oo36z2OSj8d_aTtVUAhIsqINQ/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;uY49fb:COQbmf;Pjpl" line: 144}]'
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: '[JavaScript Warning: "Empty string passed to getElementById()." {file: "https://www.google.com/xjs/_/js/k=xjs.s.en_US.gZd9nTl0KWM.O/am=CAAAIAAg-oRTABtAAAIABAAAEKQAAAAAAABEAAYAgkcZAQAAAAkBgyAOGABIKAEAAAAAEPoBAAAAAAAxAAAAQCgCYIAhUAUQAAAAAPkDAMALABhMWAAAAAAAAAAAIGAlCAY3SCAgAAQAAAAAAAAAAFUyeXEACA/d=1/ed=1/dg=2/rs=ACT90oGb9Oo36z2OSj8d_aTtVUAhIsqINQ/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;uY49fb:COQbmf;Pjpl" line: 144}]',
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: https://www.google.com/
+ERROR: [JavaScript Warning: "Content Security Policy: Ignoring ‘x-frame-options’ because of ‘frame-ancestors’ directive."]
+Location: 
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 17,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@cd28d8148b8d6e99a5c137c0f4261733',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: '[JavaScript Warning: "Content Security Policy: Ignoring ‘x-frame-options’ because of ‘frame-ancestors’ directive."]'
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: '[JavaScript Warning: "Content Security Policy: Ignoring ‘x-frame-options’ because of ‘frame-ancestors’ directive."]',
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: https://www.google.com/
+ERROR: [JavaScript Warning: "Content Security Policy: Couldn’t process unknown directive ‘require-trusted-types-for’" {file: "https://ogs.google.com/widget/callout?prid=19035299&pgid=19035296&puid=40cc034d62106a07&cce=1&dc=1&origin=https%3A%2F%2Fwww.google.com&cn=callout&pid=1&spid=538&hl=en" line: 0}]
+Location: https://ogs.google.com/widget/callout?prid=19035299&pgid=19035296&puid=40cc034d62106a07&cce=1&dc=1&origin=https%3A%2F%2Fwww.google.com&cn=callout&pid=1&spid=538&hl=en
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 17,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@f7d9aacd67ce6483e4b6be3467c27ad0',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: '[JavaScript Warning: "Content Security Policy: Couldn’t process unknown directive ‘require-trusted-types-for’" {file: "https://ogs.google.com/widget/callout?prid=19035299&pgid=19035296&puid=40cc034d62106a07&cce=1&dc=1&origin=https%3A%2F%2Fwww.google.com&cn=callout&pid=1&spid=538&hl=en" line: 0}]'
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: '[JavaScript Warning: "Content Security Policy: Couldn’t process unknown directive ‘require-trusted-types-for’" {file: "https://ogs.google.com/widget/callout?prid=19035299&pgid=19035296&puid=40cc034d62106a07&cce=1&dc=1&origin=https%3A%2F%2Fwww.google.com&cn=callout&pid=1&spid=538&hl=en" line: 0}]',
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: https://www.google.com/
+ERROR: [JavaScript Warning: "Content Security Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified" {file: "https://ogs.google.com/widget/callout?prid=19035299&pgid=19035296&puid=40cc034d62106a07&cce=1&dc=1&origin=https%3A%2F%2Fwww.google.com&cn=callout&pid=1&spid=538&hl=en" line: 0}]
+Location: https://ogs.google.com/widget/callout?prid=19035299&pgid=19035296&puid=40cc034d62106a07&cce=1&dc=1&origin=https%3A%2F%2Fwww.google.com&cn=callout&pid=1&spid=538&hl=en
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 17,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@cb44302d066bfb39f8d0281d04f1e13c',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: `[JavaScript Warning: "Content Security Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified" {file: "https://ogs.google.com/widget/callout?prid=19035299&pgid=19035296&puid=40cc034d62106a07&cce=1&dc=1&origin=https%3A%2F%2Fwww.google.com&cn=callout&pid=1&spid=538&hl=en" line: 0}]`
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: `[JavaScript Warning: "Content Security Policy: Ignoring “'unsafe-inline'” within script-src: nonce-source or hash-source specified" {file: "https://ogs.google.com/widget/callout?prid=19035299&pgid=19035296&puid=40cc034d62106a07&cce=1&dc=1&origin=https%3A%2F%2Fwww.google.com&cn=callout&pid=1&spid=538&hl=en" line: 0}]`,
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: https://www.google.com/
+ERROR: [JavaScript Warning: "Cookie “OGPC” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite" {file: "https://www.gstatic.com/og/_/js/k=og.qtm.en_US.y-MjFDSPayQ.2019.O/rt=j/m=qabr,q_d,qcwid,qapid,qald/exm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/rs=AA2YrTsbVAi3CNfzi_MMgz1I9UuDQ4v4MA" line: 158}]
+Location: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.y-MjFDSPayQ.2019.O/rt=j/m=qabr,q_d,qcwid,qapid,qald/exm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/rs=AA2YrTsbVAi3CNfzi_MMgz1I9UuDQ4v4MA
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 17,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@4902a60e65931c028704661d1652a33b',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: '[JavaScript Warning: "Cookie “OGPC” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite" {file: "https://www.gstatic.com/og/_/js/k=og.qtm.en_US.y-MjFDSPayQ.2019.O/rt=j/m=qabr,q_d,qcwid,qapid,qald/exm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/rs=AA2YrTsbVAi3CNfzi_MMgz1I9UuDQ4v4MA" line: 158}]'
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: '[JavaScript Warning: "Cookie “OGPC” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite" {file: "https://www.gstatic.com/og/_/js/k=og.qtm.en_US.y-MjFDSPayQ.2019.O/rt=j/m=qabr,q_d,qcwid,qapid,qald/exm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/rs=AA2YrTsbVAi3CNfzi_MMgz1I9UuDQ4v4MA" line: 158}]',
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: https://www.google.com/
+ERROR: [JavaScript Warning: "Cookie “OTZ” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite" {file: "https://www.gstatic.com/_/mss/boq-one-google/_/js/k=boq-one-google.OneGoogleWidgetUi.en.bFcL2X-_QMw.es5.O/ck=boq-one-google.OneGoogleWidgetUi.YzN0Y0_wl8o.L.F4.O/am=wB2zAQCA/d=1/exm=_b,_r,_tp/excm=_b,_r,_tp,calloutview/ed=1/wt=2/ujg=1/rs=AM-SdHtNeDRE5yTSKk964p835GkHtWuEzw/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:QIhFr;io8t" line: 295}]
+Location: https://www.gstatic.com/_/mss/boq-one-google/_/js/k=boq-one-google.OneGoogleWidgetUi.en.bFcL2X-_QMw.es5.O/ck=boq-one-google.OneGoogleWidgetUi.YzN0Y0_wl8o.L.F4.O/am=wB2zAQCA/d=1/exm=_b,_r,_tp/excm=_b,_r,_tp,calloutview/ed=1/wt=2/ujg=1/rs=AM-SdHtNeDRE5yTSKk964p835GkHtWuEzw/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:QIhFr;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;wR5FRb:O1Gjze;xqZiqf:wmnU7d;yxTchf:KUM7Z;zxnPse:GkRiKb/m=ws9Tlc,n73qwf,GkRiKb,e5qFLc,IZT63,UUJqVe,O1Gjze,byfTOb,lsjVmc,xUdipf,OTA3Ae,COQbmf,fKUV3e,aurFic,U0aPgd,ZwDk9d,V3dDOb,mI3LFb,O6y8ed,PrPYRd,MpJwZc,LEikZe,NwH0H,OmgaI,lazG7b,XVMNvd,L1AAkb,KUM7Z,Mlhmy,s39S4,lwddkf,gychg,w9hDv,EEDORb,RMhBfe,SdcwHb,aW3pY,pw70Gc,EFQ78c,Ulmmrd,ZfAoz,mdR7q,wmnU7d,xQtZb,JNoxi,kWgXee,MI6k7c,kjKdXe,BVgquf,QIhFr,ovKuLd,hKSk3e,yDVVkb,hc6Ubd,SpsfSb,KG2eXe,Z5uLle,MdUzUe,VwDzFe,zbML3c,A7fCU,zr1jrb,lsPsHb,hnN99e,Uas9Hd,yYB61,pjICDe
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 18,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@3bd77775a3b136c180d80ba198481b00',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: '[JavaScript Warning: "Cookie “OTZ” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite" {file: "https://www.gstatic.com/_/mss/boq-one-google/_/js/k=boq-one-google.OneGoogleWidgetUi.en.bFcL2X-_QMw.es5.O/ck=boq-one-google.OneGoogleWidgetUi.YzN0Y0_wl8o.L.F4.O/am=wB2zAQCA/d=1/exm=_b,_r,_tp/excm=_b,_r,_tp,calloutview/ed=1/wt=2/ujg=1/rs=AM-SdHtNeDRE5yTSKk964p835GkHtWuEzw/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:QIhFr;io8t" line: 295}]'
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: '[JavaScript Warning: "Cookie “OTZ” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite" {file: "https://www.gstatic.com/_/mss/boq-one-google/_/js/k=boq-one-google.OneGoogleWidgetUi.en.bFcL2X-_QMw.es5.O/ck=boq-one-google.OneGoogleWidgetUi.YzN0Y0_wl8o.L.F4.O/am=wB2zAQCA/d=1/exm=_b,_r,_tp/excm=_b,_r,_tp,calloutview/ed=1/wt=2/ujg=1/rs=AM-SdHtNeDRE5yTSKk964p835GkHtWuEzw/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:QIhFr;io8t" line: 295}]',
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
+
+PAGE: https://www.google.com/
+ERROR: [JavaScript Warning: "Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect." {file: "https://adservice.google.com/adsid/google/si?gadsid=AORoGNTESabEnOLny7Ojn7FFvwH4pV4HQeTpMhMjGWEl9Ofcyg1vFBM3kw" line: 0}]
+Location: https://adservice.google.com/adsid/google/si?gadsid=AORoGNTESabEnOLny7Ojn7FFvwH4pV4HQeTpMhMjGWEl9Ofcyg1vFBM3kw
+ARG:
+[
+  <ref *1> JSHandle {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: 0,
+    _connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _objects: [Map],
+      onmessage: [Function (anonymous)],
+      _lastId: 18,
+      _callbacks: [Map],
+      _rootObject: [Root],
+      _closedErrorMessage: undefined,
+      _isRemote: false,
+      _localUtils: [LocalUtils],
+      toImpl: [Function (anonymous)],
+      _tracingCount: 0,
+      _instrumentation: {},
+      [Symbol(kCapture)]: false
+    },
+    _parent: Page {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: 0,
+      _connection: [Connection],
+      _parent: [BrowserContext],
+      _objects: [Map],
+      _type: 'Page',
+      _guid: 'page@caf6e4d48a5910778f24dd2fcd8fb9d1',
+      _channel: [EventEmitter],
+      _initializer: [Object],
+      _logger: undefined,
+      _instrumentation: {},
+      _eventToSubscriptionMapping: [Map],
+      _browserContext: [BrowserContext],
+      _ownedContext: undefined,
+      _mainFrame: [Frame],
+      _frames: [Set],
+      _workers: Set(0) {},
+      _closed: false,
+      _closedOrCrashedRace: [ScopedRace],
+      _viewportSize: [Object],
+      _routes: [],
+      accessibility: [Accessibility],
+      coverage: [Coverage],
+      keyboard: [Keyboard],
+      mouse: [Mouse],
+      request: [APIRequestContext],
+      touchscreen: [Touchscreen],
+      _bindings: Map(0) {},
+      _timeoutSettings: [TimeoutSettings],
+      _video: [Video],
+      _opener: null,
+      [Symbol(kCapture)]: false
+    },
+    _objects: Map(0) {},
+    _type: 'JSHandle',
+    _guid: 'handle@3ba3b8c749f43111d63e9dbb3c98cc34',
+    _channel: EventEmitter {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _object: [Circular *1],
+      [Symbol(kCapture)]: false
+    },
+    _initializer: {
+      preview: '[JavaScript Warning: "Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect." {file: "https://adservice.google.com/adsid/google/si?gadsid=AORoGNTESabEnOLny7Ojn7FFvwH4pV4HQeTpMhMjGWEl9Ofcyg1vFBM3kw" line: 0}]'
+    },
+    _logger: undefined,
+    _instrumentation: {},
+    _eventToSubscriptionMapping: Map(0) {},
+    _preview: '[JavaScript Warning: "Cookie “AEC” with the “SameSite” attribute value “Lax” or “Strict” was omitted because of a cross-site redirect." {file: "https://adservice.google.com/adsid/google/si?gadsid=AORoGNTESabEnOLny7Ojn7FFvwH4pV4HQeTpMhMjGWEl9Ofcyg1vFBM3kw" line: 0}]',
+    [Symbol(kCapture)]: false
+  }
+]
+------------------------------
