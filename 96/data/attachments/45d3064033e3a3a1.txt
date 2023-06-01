@@ -1,0 +1,6 @@
+
+PAGE: https://www.google.com/
+ERROR: Unrecognized Content-Security-Policy directive 'require-trusted-types-for'.
+
+Location: 
+------------------------------
