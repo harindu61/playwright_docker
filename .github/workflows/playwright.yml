@@ -25,13 +25,6 @@ jobs:
       - name: Run Tests on Docker container
         run: docker run --rm -v "${GITHUB_WORKSPACE}/playwright/tests:/app/tests" -v "${GITHUB_WORKSPACE}/playwright/playwright-report:/app/playwright-report" -v "${GITHUB_WORKSPACE}/playwright/playwright.config.js:/app/playwright.config.js" -v "${GITHUB_WORKSPACE}/playwright/allure-results:/app/allure-results" -v "${GITHUB_WORKSPACE}/playwright/allure-report:/app/allure-report" harindu91/playwright-docker:1.1.2
 
-      - uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: allure-results
-          path: playwright/allure-results/
-          retention-days: 30
-
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
@@ -50,13 +43,6 @@ jobs:
           allure_report: allure-report
           allure_history: allure-history
           keep_reports: 20
-
-      - uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: allure-report
-          path: allure-report
-          retention-days: 30
       
       - name: Output Report URL as Worfklow Annotation
         if: always()
