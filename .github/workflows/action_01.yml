@@ -23,16 +23,16 @@ jobs:
           cd playwright
           npx playwright install --with-deps
 
-      - name: Run Playwright tests
-        run:  |
-          cd playwright
-          npx playwright test
-
       - name: Run Node app
         run: |
           cd node-app/
           npm install
           node server.js &
+
+      - name: Run Playwright tests
+        run:  |
+          cd playwright
+          npx playwright test
 
       - uses: actions/upload-artifact@v3
         if: always()
