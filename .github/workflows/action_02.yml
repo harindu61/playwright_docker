@@ -21,7 +21,7 @@ jobs:
         run: |
           cd node-app/
           npm install
-          start /B node server.js
+          forever start server.js
 
       - name: Run Playwright tests
         run:  |
