@@ -23,6 +23,11 @@ jobs:
           npm install
           forever start server.js
 
+      - name: Install dependencies
+        run: |
+          cd playwright
+          npm install
+
       - name: Run Playwright tests
         run:  |
           cd playwright
