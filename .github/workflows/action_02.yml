@@ -7,7 +7,7 @@ jobs:
   test:
     strategy:
       matrix:
-        browser: ['chrome', 'firefox', 'webkit']
+        browser: ['chromium', 'firefox', 'webkit']
     runs-on: ubuntu-latest
     steps:
       - name: git checkout repo
@@ -36,7 +36,7 @@ jobs:
       - name: Run Playwright tests
         run:  |
           cd playwright
-          npx playwright test -browser=${{ matrix.browser }}
+          npx playwright test --project=${{ matrix.browser }}
 
       - uses: actions/upload-artifact@v3
         if: always()
