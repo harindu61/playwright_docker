@@ -21,7 +21,7 @@ jobs:
         run: |
           cd node-app/
           npm install
-          node server.js &
+          node server.js "&"
 
       - name: Run Playwright tests
         run:  |
