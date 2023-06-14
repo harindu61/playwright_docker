@@ -64,12 +64,14 @@ jobs:
       - name: Run Report Merge
         run:   |
           cd playwright
-          npx playwright test playwright/tests/merge-reports
+          pwd
+          ls -l
+          npx playwright test merge-reports
 
       - uses: actions/upload-artifact@v3
         if: always()
         with:
           name: demoMerged
-          path: test-merge-report-demo/
+          path: merged-html-report/
           retention-days: 3
 
