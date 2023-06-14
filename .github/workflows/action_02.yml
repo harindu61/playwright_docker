@@ -44,3 +44,32 @@ jobs:
           name: playwright-report-${{ matrix.browser }}
           path: playwright/playwright-report/
           retention-days: 30
+
+  merge:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+
+      - uses: actions/checkout@v2
+       
+      - uses: actions/download-artifact@v3
+
+      - name: Download Merge HTML
+        run:   |
+          cd playwright
+          npm install playwright-merge-html-reports --dev
+
+      - name: Run Report Merge
+        run:   |
+          cd playwright
+          npx playwright test tests/merge-reports
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: demoMerged
+          path: test-merge-report-demo/
+          retention-days: 3
+
