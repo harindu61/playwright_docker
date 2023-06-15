@@ -1,5 +1,4 @@
-// @ts-check
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 test('has content 01', async ({ page }) => {
   await page.goto('http://localhost:3000/');
@@ -12,7 +11,7 @@ test('has content 02', async ({ page }) => {
   await page.goto('http://localhost:3000/');
 
   // Expect a title "to contain" a substring.
-  await expect(page.getByText('Hello from inside the very basic Node app!')).toBeVisible();
+  await expect(page.getByText('Hello from inside the veกry basic Node app!')).toBeVisible();
 });
 
 test('has content 03', async ({ page }) => {
