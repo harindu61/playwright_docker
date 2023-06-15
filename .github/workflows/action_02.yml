@@ -53,6 +53,11 @@ jobs:
       - uses: actions/setup-node@v3
 
       - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          cd playwright
+          npm install
        
       - uses: actions/download-artifact@v3
         with:
