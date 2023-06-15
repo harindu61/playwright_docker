@@ -56,26 +56,14 @@ jobs:
        
       - uses: actions/download-artifact@v3
         with:
-          path: playwright
-
-
-      - name: Download Merge HTML
-        run:   |
-          cd playwright
-          npm install playwright-merge-html-reports --dev
-
-      - name: Download Merge HTML
-        run:   |
-          cd playwright/tests
-          pwd
-          ls -l
+          path: playwright/playwright-report
 
       - name: Run Report Merge
         run:   |
           cd playwright
           pwd
           ls -l
-          npx playwright test tests/merge-reports
+          npm run merge
 
       - uses: actions/upload-artifact@v3
         if: always()
