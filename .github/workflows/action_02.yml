@@ -6,6 +6,7 @@ jobs:
 
   test:
     strategy:
+      fail-fast: false
       matrix:
         browser: ['chromium', 'firefox', 'webkit']
     runs-on: ubuntu-latest
