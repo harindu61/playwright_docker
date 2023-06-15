@@ -61,12 +61,18 @@ jobs:
           cd playwright
           npm install playwright-merge-html-reports --dev
 
+      - name: Download Merge HTML
+        run:   |
+          cd playwright/tests
+          pwd
+          ls -l
+
       - name: Run Report Merge
         run:   |
           cd playwright
           pwd
           ls -l
-          npx playwright test merge-reports
+          npx playwright test tests/merge-reports
 
       - uses: actions/upload-artifact@v3
         if: always()
