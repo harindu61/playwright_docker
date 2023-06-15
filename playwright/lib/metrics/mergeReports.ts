@@ -10,7 +10,7 @@ const reportPathsToMerge = fs
 
 async function runReport(paths: string[]) {
   // merges the summary.json in each report-x folder and saves a summary.json to root directory
-  await mergeSummary(paths);
+  //await mergeSummary(paths);
 
   // merges html reports and saves to /html-report
   await mergeHTMLReports(paths, {
