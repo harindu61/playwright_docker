@@ -75,21 +75,10 @@ jobs:
           cd playwright
           ls -R
 
-      - name: Copy Summary to html-report/ folder
-        if: always()
-        run: |
-          cd playwright
-          cp summary.json html-report/summary.json
-
-      - name: Display structure of Merged
-        run: |
-          cd playwright
-          ls -R
-
       - uses: actions/upload-artifact@v3
         if: always()
         with:
           name: html-report
-          path: html-report/
+          path: playwright/html-report/
           retention-days: 3
 
