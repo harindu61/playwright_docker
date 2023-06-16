@@ -14,12 +14,30 @@ jobs:
         with:
           node-version: 18
 
-      
       - name: Run Node app
         run: |
           cd node-app/
           npm install
           node server.js &
+
+          - name: Sleep to allow application to start
+          run: sleep 10s
+
+      - name: Set up reverse proxy
+        run: |
+          echo "server {
+              listen 3000;
+              location / {
+                  proxy_pass http://localhost:3001;
+              }
+          }" > default.conf
+          docker run --rm -p 3001:3000 -v $(pwd)/default.conf:/etc/nginx/conf.d/default.conf nginx
+
+      - name: Export application URL
+        id: export-application-url
+        run: |
+          echo "APP_URL=http://localhost:3001" >> $GITHUB_ENV
+          echo "::set-output name=app_url::http://localhost:3001"
 
   test:
     needs: run-app
