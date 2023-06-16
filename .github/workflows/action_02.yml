@@ -20,8 +20,8 @@ jobs:
           npm install
           node server.js &
 
-          - name: Sleep to allow application to start
-          run: sleep 10s
+      - name: Sleep to allow application to start
+        run: sleep 10s
 
       - name: Set up reverse proxy
         run: |
