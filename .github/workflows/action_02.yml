@@ -34,6 +34,11 @@ jobs:
 
     steps:
       - name: git checkout repo
+        run: |
+          echo ${{ needs.run-app.outputs.app_url }}
+          echo ${{ env.APP_URL }}
+
+      - name: git checkout repo
         uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
