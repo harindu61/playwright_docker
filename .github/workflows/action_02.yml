@@ -4,11 +4,7 @@ on: workflow_dispatch
 
 jobs: 
 
-  test:
-    strategy:
-      fail-fast: false
-      matrix:
-        browser: ['chromium', 'firefox', 'webkit']
+  run-app:
     runs-on: ubuntu-latest
     steps:
       - name: git checkout repo
@@ -17,7 +13,33 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-    
+
+      
+      - name: Run Node app
+        run: |
+          cd node-app/
+          npm install
+          node server.js &
+
+  test:
+    needs: run-app
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: ['chromium', 'firefox', 'webkit']
+    runs-on: ubuntu-latest
+
+    env:
+      APP_URL: ${{ needs.run-app.outputs.app_url }}
+
+    steps:
+      - name: git checkout repo
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      
       - name: Install dependencies
         run: |
           cd playwright
@@ -27,12 +49,6 @@ jobs:
         run: |
           cd playwright
           npx playwright install --with-deps ${{ matrix.browser }}
-
-      - name: Run Node app
-        run: |
-          cd node-app/
-          npm install
-          node server.js &
 
       - name: Run Playwright tests
         run:  |
