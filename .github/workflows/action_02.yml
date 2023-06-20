@@ -23,11 +23,13 @@ jobs:
       - name: Sleep to allow application to start
         run: sleep 10s
 
-      - name: Set up reverse proxy
+      - name: Install localtunnel
         run: npm install -g localtunnel
 
-      - name: Set up reverse proxy 2
-        run: npx localtunnel --port 3000 --subdomain hari-dom
+      - name: Run localtunnel
+        run: |
+          npx localtunnel --port 3000 --subdomain hari-dom &
+          curl ifconfig.me
 
   test:
     needs: run-app
