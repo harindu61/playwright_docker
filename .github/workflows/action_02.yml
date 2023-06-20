@@ -24,20 +24,10 @@ jobs:
         run: sleep 10s
 
       - name: Set up reverse proxy
-        run: |
-          echo "server {
-              listen 3000;
-              location / {
-                  proxy_pass http://localhost:3001;
-              }
-          }" > default.conf
-          docker run --rm -p 3001:3000 -v $(pwd)/default.conf:/etc/nginx/conf.d/default.conf -d nginx
+        run: npm install -g localtunnel
 
-      - name: Export application URL
-        id: export-application-url
-        run: |
-          echo "APP_URL=http://localhost:3001" >> $GITHUB_ENV
-          echo "::set-output name=app_url::http://localhost:3001"
+      - name: Set up reverse proxy 2
+        run: npx localtunnel --port 3000 --subdomain hari-dom
 
   test:
     needs: run-app
@@ -51,6 +41,9 @@ jobs:
       APP_URL: ${{ needs.run-app.outputs.app_url }}
 
     steps:
+      - name: curl to url
+        run: curl https://hari-dom.loca.lt
+
       - name: git checkout repo
         run: |
           echo ${{ needs.run-app.outputs.app_url }}
