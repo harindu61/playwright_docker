@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: 'npm'
 
       - name: Build Node app
         run: |
@@ -62,10 +63,12 @@ jobs:
           path: react-shop-cart-main/
 
       - name: Build Node app
-        shell: bash
         run: |
           npm install -g serve
+          pwd
           cd react-shop-cart-main/
+          pwd
+          ls
           serve -s build &
       
       - name: Install dependencies
