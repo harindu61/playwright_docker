@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs: 
 
-  run-app:
+  build-app:
     runs-on: ubuntu-latest
     steps:
       - name: git checkout repo
@@ -14,25 +14,23 @@ jobs:
         with:
           node-version: 18
 
-      - name: Run Node app
+      - name: Build Node app
         run: |
-          cd node-app/
+          cd react-shop-cart-main/
           npm install
-          node server.js &
+          npm run build
 
-      - name: Sleep to allow application to start
-        run: sleep 10s
+      - name: View files
+        run: ls -l
 
-      - name: Install localtunnel
-        run: npm install -g localtunnel
-
-      - name: Run localtunnel
-        run: |
-          npx localtunnel --port 3000 --subdomain hari-dom &
-          curl ifconfig.me
+      - name: Save build files
+        uses: actions/upload-artifact@master
+        with:
+          name: build-files
+          path: react-shop-cart-main/build
 
   test:
-    needs: run-app
+    needs: build-app
     strategy:
       fail-fast: false
       matrix:
@@ -57,6 +55,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+      
+      - uses: actions/download-artifact@master
+        with:
+          name: build-files
+          path: react-shop-cart-main/
+
+      - name: Build Node app
+        run: |
+          cd react-shop-cart-main/
+          npx serve -s build
       
       - name: Install dependencies
         run: |
