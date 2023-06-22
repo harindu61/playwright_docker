@@ -59,7 +59,7 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: build-files
-          path: react-shop-cart-main/
+          path: react-shop-cart-main/build
 
       - name: Build Node app
         run: |
