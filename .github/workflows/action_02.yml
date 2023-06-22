@@ -64,7 +64,7 @@ jobs:
       - name: Build Node app
         run: |
           cd react-shop-cart-main/
-          npx serve -s build
+          npx serve -s build &
       
       - name: Install dependencies
         run: |
