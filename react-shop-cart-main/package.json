@@ -30,6 +30,7 @@
     "deploy": "firebase deploy",
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
+    "serve": "serve -S build",
     "format": "prettier --write \"**/*.+(ts|tsx|js|json|css)\""
   },
   "jest": {

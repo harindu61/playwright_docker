@@ -65,7 +65,7 @@ jobs:
         shell: bash
         run: |
           cd react-shop-cart-main/
-          serve -s build &
+          npm run serve &
       
       - name: Install dependencies
         run: |
