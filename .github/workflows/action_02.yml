@@ -21,7 +21,7 @@ jobs:
         shell: bash
         run: |
           ARTIFACT_NAME="${{ env.HTML_REPORT_ARTIFACT_NAME }}"
-          FULL_HTML_REPORT_URL="https://esdfsd/${{ env.HTML_REPORT_URL_PATH }}/ ${ ARTIFACT_NAME// /_ }"
+          FULL_HTML_REPORT_URL="https://esdfsd/${{ env.HTML_REPORT_URL_PATH }}/${ARTIFACT_NAME// /_}"
 
           echo "::notice title=📋 Published Playwright Test Report::$FULL_HTML_REPORT_URL"
       
