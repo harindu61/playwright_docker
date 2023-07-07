@@ -2,11 +2,20 @@ name: Action 02
 
 on: workflow_dispatch
 
+env:
+  HTML_REPORT_ARTIFACT_NAME: hello world 123
+
 jobs: 
 
   build-app:
     runs-on: ubuntu-latest
     steps:
+      - name: Output Report URL as Worfklow Annotation
+        run: |
+          REPO=${{ env.HTML_REPORT_ARTIFACT_NAME }}
+          DB_NAME="${REPO// /_}"
+          echo $DB_NAME
+      
       - name: git checkout repo
         uses: actions/checkout@v3
 
