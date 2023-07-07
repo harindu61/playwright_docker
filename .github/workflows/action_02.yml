@@ -4,6 +4,7 @@ on: workflow_dispatch
 
 env:
   HTML_REPORT_ARTIFACT_NAME: hello world 123
+  HTML_REPORT_URL_PATH: 123_123_312
 
 jobs: 
 
@@ -15,6 +16,14 @@ jobs:
           REPO="${{ env.HTML_REPORT_ARTIFACT_NAME }}"
           DB_NAME="${REPO// /_}"
           echo $DB_NAME
+          
+      - name: Output Report URL as Worfklow Annotation
+        shell: bash
+        run: |
+          ARTIFACT_NAME = ${{ inputs.HTML_REPORT_ARTIFACT_NAME }}
+          FULL_HTML_REPORT_URL="https://esdfsd/${{ env.HTML_REPORT_URL_PATH }}/ ${ ARTIFACT_NAME// /_ }"
+
+          echo "::notice title=📋 Published Playwright Test Report::$FULL_HTML_REPORT_URL"
       
       - name: git checkout repo
         uses: actions/checkout@v3
