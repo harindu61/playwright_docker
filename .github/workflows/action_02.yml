@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Output Report URL as Worfklow Annotation
         run: |
-          REPO=${{ env.HTML_REPORT_ARTIFACT_NAME }}
+          REPO="${{ env.HTML_REPORT_ARTIFACT_NAME }}"
           DB_NAME="${REPO// /_}"
           echo $DB_NAME
       
