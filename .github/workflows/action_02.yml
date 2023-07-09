@@ -85,7 +85,6 @@ jobs:
           pwd
           cd react-shop-cart-main/
           pwd
-          ls
           serve -s build &
       
       - name: Install dependencies
