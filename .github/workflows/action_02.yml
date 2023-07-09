@@ -14,8 +14,9 @@ jobs:
       - name: Output Report URL as Worfklow Annotation
         run: |
           REPO="${{ env.HTML_REPORT_ARTIFACT_NAME }}"
-          DB_NAME="${REPO// /_}"
+          DB_NAME=reports/${{ github.run_id }}-${{ github.run_attempt }}"${REPO// /_}"
           echo $DB_NAME
+          echo "PATH_TO_FILE=$DB_NAME" >> $GITHUB_ENV
           
       - name: Output Report URL as Worfklow Annotation
         shell: bash
