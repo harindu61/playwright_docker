@@ -62,6 +62,9 @@ jobs:
       - name: Push HTML Report
         timeout-minutes: 3
         run: |
+          max_retries=3
+          retry_count=0
+
           git add .
           git commit -m "workflow: add HTML report for run-id ${{ github.run_id }} (attempt:  ${{ github.run_attempt }})"
 
