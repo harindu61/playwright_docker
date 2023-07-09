@@ -82,7 +82,6 @@ jobs:
       - name: Build Node app
         run: |
           npm install -g serve
-          pwd
           cd react-shop-cart-main/
           pwd
           serve -s build &
