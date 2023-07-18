@@ -1,6 +1,10 @@
 name: Action 02
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  repository_dispatch:
+    types:
+      - webhook
 
 env:
   HTML_REPORT_ARTIFACT_NAME: hello world 123
